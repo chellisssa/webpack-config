@@ -1,0 +1,9 @@
+// Jetbrains
+.idea/**
+
+// Bundle
+node_modules/**
+static/build/**
+
+// MacOS
+*.DS_Store
