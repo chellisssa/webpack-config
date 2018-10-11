@@ -31,10 +31,7 @@ module.exports = (env, args) => {
       fs: "empty"
     },
     module: {
-      rules: [{
-          test: /\.html$/,
-          use: ['file-loader?name=[path][name].[ext]']
-        },
+      rules: [
         {
           test: /\.scss$/,
           use: [
@@ -86,10 +83,11 @@ module.exports = (env, args) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        filename:  `index.html`,
+        filename: 'index.html',
+        template: 'index.html'
       }),
       new MiniCssExtractPlugin({
-        filename: '[name].css',
+        filename: 'style.css',
       }),
       new StyleLintPlugin({
         configFile: path.resolve(__dirname, './.stylelintrc'),
