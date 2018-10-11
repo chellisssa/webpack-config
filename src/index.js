@@ -1,11 +1,4 @@
-import './scss/main.scss';
 const babel = require('@babel/core');
-require('html-loader!./index.html');
-
-const hello = word => {
-  console.log(`Hello ${word}`);
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-  hello('world');
-});
+import './style/style.scss';
+import './style/animation.scss';
+import png from './img/logo-white.png';
