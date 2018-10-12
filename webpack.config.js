@@ -87,7 +87,7 @@ module.exports = (env, args) => {
         template: 'index.html'
       }),
       new MiniCssExtractPlugin({
-        filename: 'style.css',
+        filename: './style/style.css',
       }),
       new StyleLintPlugin({
         configFile: path.resolve(__dirname, './.stylelintrc'),
